@@ -1,0 +1,49 @@
+<div class="container">
+    <form id="myForm" data-id="{{articles.id}}">
+        <div class="form_item">
+            <label>Name:</label>
+            <input type="text" id="name" name="name" value="{{articles.name}}">
+        </div>
+
+        <div class="form_item">
+            <label>Title of the note:</label>
+            <input type="text" id="title" name="title" value="{{articles.title}}">
+        </div>
+
+        <div class="form_item">
+            <label>Description:</label>
+            <textarea id="description" name="description">{{articles.description}}</textarea>
+        </div>
+        <button type="submit"> Edit note </button>
+    </form>
+
+</div>
+
+
+<script>
+
+    $( '#myForm' ).on( 'submit', ( e ) => {
+        e.preventDefault();
+        const id = $( '#myForm' ).data( 'id' );
+        const jsonData = {
+            name: $( '#name' ).val(),
+            title: $( '#title' ).val(),
+            description: $( '#description' ).val()
+        }
+
+        $.ajax( {
+            type: 'PATCH',
+            url: `/api/edit_note/${ id }`,
+            data: JSON.stringify( jsonData ),
+            contentType: 'application/json',
+            success: ( data ) => {
+                window.location.href = "/"
+            },
+            error: () => {
+                alert( 'error' )
+            }
+        } )
+
+    } )
+
+</script>
