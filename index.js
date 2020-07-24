@@ -5,6 +5,9 @@ const hbs = require("express-handlebars");
 
 const fetch = require("node-fetch");
 var cors = require("cors");
+//setup CSS
+app.use("/css", express.static(__dirname + "/public/css"));
+
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

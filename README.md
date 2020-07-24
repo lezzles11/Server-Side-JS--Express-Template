@@ -1,10 +1,29 @@
-# Postgres Node :rocket:
+# Basic Express Example :rocket:
 
 ## Purpose :dark_sunglasses:
 
 The purpose of this template is to create a barebones fullstack application utilizing express, helmet, CORS.
 
-### Problem :open_book:
+### Setup :open_book:
+
+1. cd into the folder
+2. Install all the needed packages
+
+```
+npm install
+```
+
+3. Run the server
+
+```
+npx json-server --port 3001 --watch db.json
+```
+
+4. Open another terminal, and run the frontend
+
+```
+node index.js
+```
 
 ### User Stories :telescope:
 
@@ -27,8 +46,8 @@ The purpose of this template is to create a barebones fullstack application util
 |       | Adding authentication                  |    H     |     1 hour     |             |
 | x     | Post Successfully                      |    H     |     1 hour     |             |
 | x     | Get Successfully                       |    H     |     1 hour     |             |
-|       | Update Successfully                    |    H     |     1 hour     |             |
-|       | Delete Successfully                    |    H     |     1 hour     |             |
+| x     | Update Successfully                    |    H     |     1 hour     |             |
+| x     | Delete Successfully                    |    H     |     1 hour     |             |
 |       | Total                                  |    H     |    10 hours    |             |
 
 ![Project Template](https://miro.medium.com/max/183/1*kJCTzTrvZpbDsM2l2kg_jw.png)
