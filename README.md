@@ -16,17 +16,17 @@ The purpose of this template is to create a barebones fullstack application util
 
 | Done? | Component                              | Priority | Estimated Time | Actual Time |
 | ----- | -------------------------------------- | :------: | :------------: | :---------: |
-|       | Develop a server with express          |    H     |    30 mins     |   30mins    |
-|       | Add middleware                         |    M     |    30 mins     |   10mins    |
-|       | Getting request parameters             |    M     |    30 mins     |   15 mins   |
+| x     | Develop a server with express          |    H     |    30 mins     |   30mins    |
+| x     | Add middleware                         |    M     |    30 mins     |   10mins    |
+| x     | Getting request parameters             |    M     |    30 mins     |   15 mins   |
 |       | Serve static files                     |    H     |    30 mins     |   10 mins   |
-|       | Add routes                             |    H     |     1 hour     |             |
+| x     | Add routes                             |    H     |     1 hour     |             |
 |       | Implement secure connections           |    H     |     1 hour     |             |
 |       | Adding security safeguards with helmet |    H     |     1 hour     |             |
-|       | Implementing CORS                      |    H     |     1 hour     |             |
+| x     | Implementing CORS                      |    H     |     1 hour     |             |
 |       | Adding authentication                  |    H     |     1 hour     |             |
-|       | Post Successfully                      |    H     |     1 hour     |             |
-|       | Get Successfully                       |    H     |     1 hour     |             |
+| x     | Post Successfully                      |    H     |     1 hour     |             |
+| x     | Get Successfully                       |    H     |     1 hour     |             |
 |       | Update Successfully                    |    H     |     1 hour     |             |
 |       | Delete Successfully                    |    H     |     1 hour     |             |
 |       | Total                                  |    H     |    10 hours    |             |
